@@ -1,0 +1,37 @@
+﻿First Name	Middle Initial (optional)	Last Name	E-mail	Organization	Primary Subject Area	Secondary Subject Areas
+Alexander		Aved	alexander.aved@us.af.mil	US Air Force Research Lab		
+Aly		Farag	aly.farag@louisville.edu	University of Louisville		
+Angel		Sappa	asappa@cvc.uab.es	Computer Vision Center, Spain		
+Bernard		Abayowa	bernard.abayowa.1@us.af.mil	AFRL		
+Collen		Roller	collen.roller.1@us.af.mil	Air Force Research Laboratory, USA		
+Cunjian		Chen	cunjian.chen@outlook.com	Michigan State University		
+Daniel		Koenig	daniel.d.koenig@gmx.de	Hensoldt Optronics		
+Djemel		Ziou	Djemel.Ziou@USherbrooke.ca	Universite de Sherbrooke		
+Erhan		Gundogdu	egundogdu87@gmail.com	Aselsan Research Center		
+Guillaume-Alexandre		Bilodeau	guillaume-alexandre.bilodeau@polymtl.ca	Polytechnique Montréal		
+Guoliang		Fan	guoliang.fan@okstate.edu	Oklahoma State University		
+Haibin		Ling	hbling@temple.edu	Stony Brook University		
+Hao		Wu	horacewu@ucla.edu			
+Ishwar		Kulkarni	ishwark@nvidia.com	Nvidia, USA		
+Jun		Fang	junf2@uci.edu			
+Liangjiang		Yu	liangjiang.yu@okstate.edu	ASML		
+Mark		Keck	mark.keck.jr@gmail.com	RightHand Robotics		
+Michael		Teutsch	michael.teutsch@hensoldt.net	Hensoldt Optronics		
+Ming		Xu	xuming@uwmalumni.com			
+Nizar		Bouguila	nizar.bouguila@concordia.ca	Concordia University		
+Ozge		Whiting	ozge.whiting@ge.com	Avitas Systems		
+Riad		Hammoud	dr.hiryad@gmail.com	"BAE Systems, USA"		
+Stan	Z	Li	stan.zq.li@qq.com	National Laboratory of Pattern Recognition		
+Vijayan	K	Asari	vasari1@udayton.edu	University of Dayton		
+Wesam	A	Sakla	sakla@llnl.gov	Lawrence Livermore National Laboratory		
+William		Reynolds	william.reynolds@teledyne.com	Teledyne Scientific Company, LLC		
+Xin		Zhang	eexinzhang@scut.edu.cn	South China University of Technology		
+Yi		Ding	xddingyi@uw.edu	UW		
+David		Münch	david.muench@iosb.fraunhofer.de	Fraunhofer IOSB, Germany
+Stefan		Becker	stefan.becker@iosb.fraunhofer.de	Fraunhofer IOSB, Germany
+Jan		Bednarik	jan.bednarik@epfl.ch	EPFL, Switzerland
+Vidit		Vidit	vidit.vidit@epfl.ch	EPFL, Switzerland
+Hamza		Ergezer	hergezer@gmail.com	ASELSAN, Turkey
+Yeti	Ziya	Gurbuz	yetigurbuzz@gmail.com	Middle East Technical University, Turkey
+Yoldas		Ataseven	yoldas.ataseven@gmail.com	Aselsan, Turkey
+

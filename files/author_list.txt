@@ -1,0 +1,66 @@
+Alonso	Granados	agranados11@miners.utep.edu	University of Texas at El Paso	United States	 
+Alperen	Elihos	aelihos@havelsan.com.tr	HAVELSAN INC.	Turkey	 
+Amanda	Berg	amanda.berg@liu.se	Linköping university	Sweden	 
+Andrew	Wallace	a.m.wallace@hw.ac.uk	Heriot Watt University	United Kingdom	 
+Angel	Sappa	asappa@espol.edu.ec	ESPOL POLYTECHNIC UNIVERSITY	Ecuador	 
+Anshu	Malhotra	anshumalhotra5@gmail.com	TCS Research	India	 
+Anthony	Ortiz	amortizcepeda@miners.utep.edu	University of Texas at El Paso	United States	 
+Barry	Connor	Barry.Connor@uk.thalesgroup.com	Thales UK	United Kingdom	 
+Boris	Vintimilla	bvintimi@espol.edu.ec	ESPOL POLYTECHNIC UNIVERSITY	Ecuador	 
+Brian	Millikan	brian.millikan@gmail.com	University of Central Florida	United States	 
+Burak	Balci	bbalci@havelsan.com.tr	HAVELSAN INC.	Turkey	 
+Christopher	Kiekintveld	cdkiekintveld@utep.edu	University of Texas at El Paso	United States	 
+Colin	Olson	colin.olson@nrl.navy.mil	Naval Research Laboratory		 
+Dalton	Rosario	dalton.s.rosario.civ@mail.mil	US Army Research Laboratory	United States	 
+Edgar	Bernal	edgar.bernal@rochester.edu	University of Rochester	United States	 
+Ela	UYSAL	elauysal@korea.ac.kr	Korea University	Turkey	 
+Eliza	Mace	emace@mitre.org	MITRE	United States	 
+Erh-Kan	King	goan15910@gmail.com	NTU	Taiwan	 
+Eric	Mortensen	enmortensen@gmail.com	Lucidyne Technologies, Inc.	United States	 
+Erik	Blasch	erik.blasch@gmail.com	AFRL		 
+Hassan	Foroosh	foroosh@cs.ucf.edu	University of Central Florida	United States	 
+Hung-Ting	Su	d06944009@ntu.edu.tw	Nation Taiwan University	Taiwan	 
+Jeff	Lin	zendo3464@gmail.com	Nation Taiwan University	Taiwan	 
+Jiahang	Che	ivapple@126.com	Nuctech Company Limited	China	 
+Jinjun	Wang	jinjun@xjtu.edu.cn	Xi'an Jiaotong University	China	 
+Jorgen	Ahlberg	jorgen.ahlberg@liu.se	Computer Vision Laboratory, Linköping University	Sweden	 
+Keith	Manville	kmanville@mitre.org	MITRE	United States	 
+Kin Gwn	Lore	lorek@utrc.utc.com	United Technologies Research Center	United States	 
+Kishore	Reddy	reddykk@utrc.utc.com	UTRC		 
+Li	Zhang	zli@mail.tsinghua.edu.cn	Tsinghua University	China	 
+Marcel	Sheeny	ms47@hw.ac.uk	Heriot-Watt University	United Kingdom	 
+Mark	Koch	mwkoch@sandia.gov	Sandia National Laboratories		 
+Matthew	Klaric	matthew.n.klaric@nga.mil	NGA	United States	 
+Mehryar	Emambakhsh	mehryar.emambakhsh@cortexica.com	Cortexica Vision Systems	United Kingdom	 
+michael	giering	gierinmj@utrc.utc.com	UTRC		 
+Michael	Felsberg	michael.felsberg@liu.se	Linköping University	Sweden	 
+Michael	Laielli	michael.j.laielli@nga.mil	NGA	United States	 
+Michael	Loveday	m.d.loveday@durham.ac.uk	Durham University	United Kingdom	 
+Monica	Barbu-McInnis	monicabm@mitre.org	MITRE	United States	 
+Olac	Fuentes	ofuentes@utep.edu	University of Texas at El Paso		 
+Patricia	Suarez	plsuarez@espol.edu.ec	ESPOL POLYTECHNIC UNIVERSITY	Ecuador	 
+Paul	Gaynor	paul.gaynor@uwimona.edu.jm	The University of the West Indies		 
+Qiyu	Sun	qiyu.sun@ucf.edu	University of Central Florida	United States	 
+Ramya	Hebbalaguppe	ramya.hebbalaguppe@tcs.com	TCS Research	India	 
+Riad	Hammoud	riad.hammoud@baesystems.com	BAE Systems		
+Robert	Riley	rriley@sandia.gov	Sandia National Laboratories	United States	 
+Roger	West	rdwest@sandia.gov	Sandia National Laboratories	United States	 
+Samuel	Dooley	samuel.w.dooley@nga.mil	NGA	United States	 
+Sanjay	Singh	luckysingh3077@rediffmail.com	IITBHU	India	 
+Sanping	Zhou	sanpingzhou@stu.xjtu.edu.cn	Xi'an Jiaotong University	China	 
+Sen	Wang	s.wang@hw.ac.uk	Heriot-Watt University	United Kingdom	 
+Shirish	Karande	shirish.karande@tcs.com	TCS Research	India	 
+Shuo	Liu	luke.liu@alumni.ubc.ca	The University of British Columbia Okanagan	Canada	 
+Tegan	Emerson	tegan.emerson@nrl.navy.mil	U.S. Naval Research Laboratory	United States	 
+Timothy	Doster	timothy.doster@nrl.navy.mil	U.S. Naval Research Laboratory	United States	 
+Toby	Breckon	toby.breckon@durham.ac.uk	Durham University	United Kingdom	 
+Tu-Thach	Quach	tong@sandia.gov	Sandia National Laboratories	United States	 
+Vijay	John	vijayjohn1983@gmail.com	Toyota Technological Institute		 
+Winston	Hsu	whsu@ntu.edu.tw	National Taiwan University	Taiwan	 
+Xingyu	Wan	wanxingyu@stu.xjtu.edu.cn	Xi'an Jiaotong University	China	 
+Yen-Liang	Lin	yenlianglintw@gmail.com	GE Global Research	United States	 
+Ying	Huang	huangying@cqupt.edu.cn	Chongqing University of Posts and Telecommunications	China	 
+Yusuf	Artan	yartan@havelsan.com.tr	HAVELSAN INC.	Turkey	 
+Yuxiang	Xing	xingyx@mail.tsinghua.edu.cn	Tsinghua University	China	 
+Zachary	Bell	zjbell@miners.utep.edu	University of Texas at El Paso	United States	 
+Zheng	Liu	zheng.liu@ieee.org	The University of British Columbia Okanagan	Canada	 
