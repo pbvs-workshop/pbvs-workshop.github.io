@@ -131,9 +131,9 @@
 					
 					<p align="justify">
 						<ul>
-							<li>Evaluation 1: 10 noisy down-sampled images, from HR camera, will be provided to compute the corresponding SR. Bicubic function should be used for down-sampling at scale of 4 and Gaussian noise** with mean=0 and sigma=10 should be considered. Results will be evaluated as follows: <br/><center><img src="challenge/img/formula01.png" width="20%" /></center>where EVAL is PSNR & SSIM measures and N is the number of validation images.<br/><br/>** On python for Gaussian noise, use np.random.normal(mean, sigma, img.shape)</li><br/>
+							<li>Evaluation 1: 10 noisy down-sampled images, from HR camera, will be provided to compute the corresponding SR. Bicubic function should be used for down-sampling at scale of 4 and Gaussian noise** with mean=0 and sigma=10 should be considered. Results will be evaluated as follows: <br/><center><img src="challenge/img/formula01.PNG" width="20%" /></center>where EVAL is PSNR & SSIM measures and N is the number of validation images.<br/><br/>** On python for Gaussian noise, use np.random.normal(mean, sigma, img.shape)</li><br/>
 							
-							<li>Evaluation 2: MR images as provided by the camera will be shared; this evaluation will be performed just for the x2 scale. The average evaluation value will be computed as follows:<br/><center><img src="challenge/img/formula02.png" width="20%" /></center>where EVAL is PSNR and SSIM measures, and N is the number of validation images (note that EVAL will be applied just on a part of the image to avoid regions without overlap due to the bias of the cameras).</li><br/>
+							<li>Evaluation 2: MR images as provided by the camera will be shared; this evaluation will be performed just for the x2 scale. The average evaluation value will be computed as follows:<br/><center><img src="challenge/img/formula02.PNG" width="20%" /></center>where EVAL is PSNR and SSIM measures, and N is the number of validation images (note that EVAL will be applied just on a part of the image to avoid regions without overlap due to the bias of the cameras).</li><br/>
 						<!--- 
 						R_{\times 4}=\frac{1}{N}\sum_{1}^{N}\textit{EVAL}\left ( GT_{N},SR_{N}^{\times 4} \right )
 ---
