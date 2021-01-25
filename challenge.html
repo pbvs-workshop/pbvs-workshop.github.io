@@ -50,82 +50,49 @@
 
 <div class="section" id="challenge">
     <div class="container">
-		<div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">Challenge 2021</h3>
-                    </div>
-                    
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p align="center"><strong>Coming soon ...</strong></p>
-                            </div>
-					   </div>  
-					</div> 
-				</div> 
-			</div> 
-		</div>    
-
-
-
-		<!--
         <div class="row">
-        <div>
-        <div>
-            <div>
-                <div style="background-color:#ffffff">
-                    <h3 style="font-family:Neuropol"><font color="#000000"><p align="center">1st. Thermal Image Super-Resolution Challenge</p></font></h3>
-				</div>
-			</div>
-		</div>
-	</div>
             <div class="panel panel-primary" id="overview">
                 <div class="panel-heading">
                     <h3 class="panel-title text-center">Objective & Scope</h3>
                 </div>
                 <div class="panel-body">
-
-					<div class="row">
-						<div class="col-md-12">
-							<p align="center"><strong>Coming soon</strong></p>
-						</div>
-				   </div>
-				   
-                    <p align="justify">In general, thermal images have a poor resolution, which could be improved by using learning-based traditional super-resolution methods. These methods have been largely used in the visible spectral domain. They work by downsampling and adding noise and blur to the given image. These noisy and blurred poor quality images, together with the given images (which are used as the Ground Truths), are used in the learning process.</p>
+                    <p align="justify">The thermal image super-resolution (TISR) problem has become an attractive research topic in recent years, mainly due to the appealing results obtained with recent deep learning-based approaches. In order to define a common benchmark for evaluating the different contributions, the first challenge on TISR has been proposed at the PBVS-2020 workshop. Due to the success of that first challenge, and trying to keep improving the obtained results, this year the second challenge on TISR is proposed in the framework of the PBVS-2021 workshop.</p>
 					<p align="justify">
-					The approach mentioned above has been mostly used to tackle the super-resolution problem, however there are few contributions where the learning process is based on the usage of a pair of images (low and a high-resolution images) obtained from different cameras. For the current challenge, a novel thermal image <a class="js-scroll-trigger" href="#dataset">dataset</a> has been created, containing images with three different resolutions (low, mid, high) obtained with three different thermal cameras. <b>The challenge consists in creating a solution capable of generating super-resolution images in x2, x3 and x4 scales from the different resolutions, in the case of x2 an additional evaluation will be performed by using a HR image obtained from another camera.</b> The results from each team will be evaluated in two ways as detailed below.
+					<b>The challenge stated for this year consists in obtaining super-resolution images at x2 and x4 scales from the given images.</b>
 					</p>
-					
+					<p align="justify">
+					Just the mid- and high-resolution images from last year dataset will be considered. Ground truth images for the x4 scale corresponds to the provided high-resolution images; in other words, each team should down-sample the given images by x4 and use these down-sampled images (by adding noise) as inputs to develop their solutions. Regarding the x2 super-resolution solution, it should be developed using as an input the given mid-resolution images acquired with the camera Axis Q2901-E and as an output, the corresponding high-resolution images, of the same scene, but acquired with the FLIR FC-632O camera. In other words, the x2 scale proposed solution should be able to tackle both problems, i.e., generating the super-resolution of the images acquired with the camera Axis Q2901-E camera; as well as mapping images from one domain (Axis Q2901-E camera) to another domain (FLIR FC-632O camera).
+					</p>
                 </div>
             </div>
-        <!--    
+            
 			<div class="panel panel-primary" id="dataset">
 				<div class="panel-heading">
 					<h3 class="panel-title text-center">Dataset</h3>
 				</div>
 				 <div class="panel-body">
-                    <p align="justify">A dataset has been created using three different thermal cameras, in order to have real scenarios, with different conditions and objects. Each camera has a different resolution (low, mid, high). The technical information is shown below in <a class="js-scroll-trigger" href="#table1">Table 1</a> and illustrations from each camera depicted in <a class="js-scroll-trigger" href="#fig1">Fig. 1</a>.</p>
+                    <p align="justify">The dataset used for this second TISR challenge consists of the mid- and high-resolution images of last year's challenge. These images have been acquired at the same time with different cameras. Technical details are provided below in <a class="js-scroll-trigger" href="#table1">Table 1</a>, some illustrations from each camera are depicted in <a class="js-scroll-trigger" href="#fig1">Fig. 1</a>.</p>
 					<center>
 					<table class="table table-bordered" id="table1" style="width:60%">
 						<tbody>
 							<tr><th>Image Description&nbsp;&nbsp;&nbsp;</th><th>Brand Camera&nbsp;&nbsp;</th><th>FOV&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Native Resolution&nbsp;&nbsp;</th></tr>
-							<tr><td>Low (LR)</td><td>Axis Domo P1290</td><td style="text-align:right">8mm</td><td style="text-align:right">160x120</td></tr>
+							<tr style="color:lightgray"><td>Low (LR)<sup>+</sup></td><td>Axis Domo P1290</td><td style="text-align:right">8mm</td><td style="text-align:right">160x120</td></tr>
 							<tr><td>Mid (MR)</td><td>Axis Q2901-E</td><td style="text-align:right">9mm</td><td style="text-align:right">320x240</td></tr>
 							<tr><td>High (HR)</td><td>FC-632O FLIR</td><td style="text-align:right">13mm</td><td style="text-align:right">640x512*</td></tr>
 						</tbody>
 					</table>
-					<i>Table 1 - Thermal Camera Specification (* Cropped to 640x480).</i>
+					<i>Table 1 - Thermal Camera Specification (* Cropped to 640x480) (+ images not used in this second challenge).</i>
 					</center>
 					<br/>
 					<center>
-					<img src="images/dataset.png" width="70%" id="fig1" /><br/>
-					<i>Figure 1 - Examples from each camera.</i>
+					<img src="img/dataset.png" width="70%" id="fig1" /><br/>
+					<i>Figure 1 - Examples from each camera (+ images not used in this second challenge).</i>
 					</center><br/>
 					
-					<p align="justify">A total of 1021 thermal images were simultaneously taken with each camera. All images are semi-paired. From all these images, 1001 are going to be published (951 for training and 50 for testing), the remaining 20 will be used in the challenge for <a class="js-scroll-trigger" href="#evaluation">validation</a>.</p></p>
-					 <p align="right">&nbsp;</p>
+					<p align="justify">
+					The original dataset contains a total of 1021 thermal images, which were simultaneously taken with each camera. All images are semi-paired. From all these images, 1001 are provided to the participants (951 for training and 50 for testing), while the remaining 20 are used for evaluating the results from the different teams (remember that from the given dataset just mid- and high-resolution images are needed, low-resolution images are also included since they are a part of the original dataset).</p>
+					
+					<p align="right">&nbsp;</p>
                 </div>
 			</div>
 			
@@ -134,44 +101,80 @@
 					<h3 class="panel-title text-center">Evaluation</h3>
 				</div>
 				 <div class="panel-body">
-                    <p align="justify">PSNR and structural similarity (SSIM) measures are going to be computed over a small set of images left for evaluating the performance of the proposed solution. Two kinds of evaluations are going to be performed. For the first evaluation, a set of 10 downsampled and noisy images will be shared for traditional evaluation as shown in <a class="js-scroll-trigger" href="#evaluation01">Fig. 2</a>. For the second evaluation a set of 10 real images, from the MR dataset, will be shared. In this case, the obtained SR images will be compared with the corresponding real High Resolution semi-paired images, as shown in <a class="js-scroll-trigger" href="#evaluation02">Fig. 3</a>. For the second evaluation, HR images are going to be registered with the computed SR images in order to use PSNR & SSIM metrics.</p>
+                    <p align="justify">PSNR and structural similarity (SSIM) measures are going to be computed over a small set of images left for evaluating the performance of the proposed solution. Two kinds of evaluations are going to be performed. For the first evaluation, a set of 10 single down-sampled and noisy images will be shared for traditional evaluation as shown in <a class="js-scroll-trigger" href="#evaluation01">Fig. 2</a>. For the second evaluation a set of 10 real images, from the MR dataset, will be shared. In this case, the obtained SR images will be compared with the corresponding real High-Resolution semi-paired images, as shown in <a class="js-scroll-trigger" href="#evaluation02">Fig. 3</a>. For the second evaluation, HR images are going to be registered with the computed SR images in order to compute PSRN & SSIM metrics.</p>
+					
 					<center>
-						<img src="images/challenge01.png" width="40%" id="evaluation01" /><br/>
-						<i>Figure 2 - First evaluation diagram (x2 for low, x3 for mid, x4 for high).</i>
+						<img src="img/challenge01.png" width="40%" id="evaluation01" /><br/>
+						<i>Figure 2 - First evaluation diagram (x4 for high).</i>
 						<br/><br/>
 						
-						<img src="images/challenge02.png" width="40%" id="evaluation02" /><br/>
-						<i>Figure 3 - Second evaluation diagram*.</i>
+						<img src="img/challenge02.png" width="40%" id="evaluation02" /><br/>
+						<i>Figure 3 - Second evaluation diagram* (x2 for MR2HR).</i>
+						<br/><br/>
 					</center>
+					
 					<p align="right">&nbsp;</p>
 					<p>*Due to the semi-paired nature, for a fair comparison, the evaluation will be performed over a small region (50% of image size) centered in the image.</p>
+					
 					<p align="right">&nbsp;</p>
+					
 					<p align="justify">
 						<ul>
-							<li>Evaluation 1: will consist of three evaluations, one per each camera (x2 for low, x3 for mid and x4 for high). For each scale, noisy downsampled images from each camera will be provided to compute the corresponding SR (bicubic function will be used for downsampling and Gaussian noise** with mean=0 and sigma=10 will be added) from each camera will be provided to compute the corresponding SR, which will be evaluated as follows: <br/><center><img src="images/formula01.png" width="20%" /></center>where EVAL is PSNR & SSIM measures, xr corresponds to the SR scale and N is the number of validation images (10 per camera).<br/><br/>** On python for Gaussian noise, use np.random.normal(mean, sigma, img.shape)</li><br/>
+							<li>Evaluation 1: 10 noisy down-sampled images, from HR camera, will be provided to compute the corresponding SR. Bicubic function should be used for down-sampling at scale of 4 and Gaussian noise** with mean=0 and sigma=10 should be considered. Results will be evaluated as follows: <br/><center><img src="img/formula01.png" width="20%" /></center>where EVAL is PSNR & SSIM measures and N is the number of validation images.<br/><br/>** On python for Gaussian noise, use np.random.normal(mean, sigma, img.shape)</li><br/>
 							
-							<li>Evaluation 2: MR images as provided by the camera will be shared; this evaluation will be performed just for the x2 scale. The average evaluation value will be computed as follows:<br/><center><img src="images/formula02.png" width="20%" /></center>where EVAL is PSNR and SSIM measures, and N is the number of validation images (note that EVAL will be applied just on a part of the image to avoid regions without overlap due to the bias of the cameras).</li>
+							<li>Evaluation 2: MR images as provided by the camera will be shared; this evaluation will be performed just for the x2 scale. The average evaluation value will be computed as follows:<br/><center><img src="img/formula02.png" width="20%" /></center>where EVAL is PSNR and SSIM measures, and N is the number of validation images (note that EVAL will be applied just on a part of the image to avoid regions without overlap due to the bias of the cameras).</li><br/>
+						<!--- 
+						R_{\times 4}=\frac{1}{N}\sum_{1}^{N}\textit{EVAL}\left ( GT_{N},SR_{N}^{\times 4} \right )
+---
+R_{\times 2}=\frac{1}{N}\sum_{1}^{N}\overline{\textit{EVAL}}\left ( GT_{N},SR_{N}^{\times 2} \right )
+
+						-->
 						</ul>
 					</p>
 					<p align="right">&nbsp;</p>
 					<p align="justify">
-						The super-resolution (SR) results must be submitted in a <a href="files/structure.zip">zip file</a> together with a short description of the proposed approach to <<a href="mailto:pbvs20.tisr.challenge@gmail.com">pbvs20.tisr.challenge@gmail.com</a>>. The approach with the higher performance in most evaluation metrics will be the winner of the challenge.</a></p>
 						<center>
-						<table class="table table-bordered" id="table2" style="width:40%">
+						<table class="table table-bordered" id="table2" style="width:60%">
 							<tbody>
-								<tr><th>Scale&nbsp;&nbsp;&nbsp;</th><th>Evaluation 1&nbsp;&nbsp;</th><th>Evaluation 2</th></tr>
-								<tr><td>x2</td><td>PSNR/SSIM</td><td>PSNR/SSIM</td></tr>
-								<tr><td>x3</td><td>PSNR/SSIM</td><td style="text-align:center">---</td></tr>
-								<tr><td>x4</td><td>PSNR/SSIM</td><td style="text-align:center">---</td></tr>
+								<tr><th>Scale&nbsp;&nbsp;&nbsp;</th><th>Evaluation1 (SISR x4)&nbsp;&nbsp;</th><th>Evaluation2 (SISR MR2HR)</th></tr>
+								<tr><td>x2</td><td style="text-align:center">---</td><td style="text-align:center">PSRN/SSIM</td></tr>
+								<tr><td>x4</td><td style="text-align:center">PSRN/SSIM</td><td style="text-align:center">---</td></tr>
 							</tbody>
 						</table>
 						<i>Table 2 - Evaluations measures.</i>
 						<center>
 					</p>
 					<p align="right">&nbsp;</p>
+					<p align="justify">
+						<b>Note:</b> The super-resolution (SR) results must be submitted in a <b><a href="structure.zip">zip file</a></b> together with a short description of the proposed approach to <<a href="mailto:pbvs21.tisr.challenge@gmail.com">pbvs21.tisr.challenge@gmail.com</a>>. The approach with the highest performance in most evaluation metrics will be the winner of the challenge.
+					</p>
 					
                 </div>
 			</div>
+			
+			<div class="panel panel-primary" id="dates">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Benchmark</h3>
+				</div>
+				 <div class="panel-body">
+                    <p align="justify">
+						Feel free to check the 1st. Thermal Image Super-Resolution Challenge <a href="http://vcipl-okstate.org/pbvs/20/challenge.html" target="_BLANK">here</a> for more information.<br/><br/>
+						For benchmark, please check <i>Rivadeneira et al. (2020). Thermal Image Super-Resolution Challenge – PBVS 2020. In The 16th IEEE Workshop on Perception Beyond the Visible Spectrum on the Conference on Computer Vision and Pattern Recongnition (CVPR 2020) (Vol. 2020-June, pp. 432–439)</i> <a href="https://openaccess.thecvf.com/content_CVPRW_2020/html/w6/Rivadeneira_Thermal_Image_Super-Resolution_Challenge_-_PBVS_2020_CVPRW_2020_paper.html" target="_BLANK">paper HERE</a>.
+					</ul>
+					</p>
+                </div>
+			</div>
+			
+			<!--div class="panel panel-primary" id="awards">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Awards</h3>
+				</div>
+				 <div class="panel-body">
+						<div class="col-md-12">
+							<p align="center"><strong>Comming soon</strong></p>
+						</div>
+                </div>
+			</div-->
 			
 			<div class="panel panel-primary" id="dates">
 				<div class="panel-heading">
@@ -180,39 +183,24 @@
 				 <div class="panel-body">
                     <p align="justify">
 						<ul>
-						<li>Registration open & datase released: December 10, 2019</li>
-						<li>Evaluation images distributed: February 21, 2020</li>
-						<li>Deadline for challenge & result submitted: <b>February 28, 2020</b></li>
-						<li>Winner announcement: June 14, 2020</li>
+						<li>Registration open & dataset released: January 18, 2021</li>
+						<li>Evaluation images distributed: March 2, 2021</li>
+						<li>Deadline for challenge & result submitted: <b>March 12, 2021</b></li>
+						<li>Winner announcement: June 19, 2021</li>
 					</ul>
 					</p>
                 </div>
 			</div>
-            
-            <div class="panel panel-primary" id="dates">
+			
+			<div class="panel panel-primary" id="">
 				<div class="panel-heading">
-					<h3 class="panel-title text-center">Winners</h3>
+					<h3 class="panel-title text-center">Register</h3>
 				</div>
 				 <div class="panel-body">
-                    <p align="justify">
-						<center>
-						<b>FIRST PLACE: </b>
-						<b>MLCV-Lab_SVNIT_NTNU team</b><br><br>
-						Heena Patel<sup>1</sup>, Vishal Chudasama<sup>1</sup>, Kalpesh Prajapati<sup>1</sup>,<br>
-						Kishor P. Upla<sup>1,2</sup>, Raghavendra Ramachandra<sup>2</sup>, Kiran Raja<sup>2</sup>, Christoph Busch<sup>2</sup><br><br>
-						<sup>1</sup>SVNIT, Surat, India &amp; <sup>2</sup>NTNU, Gjøvik, Norway
-						
-						<br><br><br>
-						<b>SECOND PLACE: </b>
-						<b>COUGER AI team</b><br><br>
-						Sabari Nathan<sup>3</sup>, Priya Kansal<sup>3</sup><br><br>
-						<sup>3</sup>Couger Inc, Japan<br>
-						
-						</center>
-					</p>
+                    <p align="justify"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOQB9SXZL2dleHIf9dLBQbY7Q5G4oVAOWODKKBrvmcmBZoQg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe></p>
+					 <p align="right">&nbsp;</p>
                 </div>
 			</div>
-
 			
 			<div class="panel panel-primary" id="">
 				<div class="panel-heading">
@@ -230,9 +218,9 @@
 
 			</div>
 			
-		-->
+            
+        </div>
     </div>
 </div>
-
 
 </body></html>
