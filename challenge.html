@@ -49,17 +49,32 @@
 </div>
 
 
-<div class="section" id="challenge">
+<div class="section" id="announcement">
+    <div class="container">
+        <div class="row">
+<p align="center"><strong>Announcement:  this year, <u>THREE</u> challenges
+	are being organized in the framework of PBVS'2022 workshop. (Details to be updated in next few weeks) </strong>
+</p>
+</div>
+</div>
+</div>
+
+<!--
+<div class="section" id="announcement">
     <div class="container">
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">3rd Thermal Image Super-Resolution Challenge</h3>
+                    <h3 class="panel-title text-center">Challenges Organized in Conjunction with PBVS 2022</h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <p align="center"><strong>Coming soon ... </strong></p>
+                            <p align="justify"><strong>ANNOUNCEMENT: </strong> This year, <strong>THREE</strong>  different challenges
+								are being organized in the framework of PBVS'2022 workshop; details on these challenges are given below. 
+							</p>
+							<p align="justify">	(In next weeks, links for online evaluations will be provided.)
+							</p>
                         </div>
                    </div>    
             </div>
@@ -67,6 +82,79 @@
         </div>
     </div>
 </div>
+-->
+
+
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">3rd Thermal Image Super-Resolution Challenge (TISR)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p align="justify">The third thermal image super-resolution (TISR) challenge consists in obtaining super-resolution images at x2 and x4 scales from the given thermal images.</p>
+							<p align="justify">The third edition of this challenge will follow the same setup as the second edition (i.e., just the mid- and high-resolution images from the dataset used in the first edition are considered). Ground truth images for the x4 scale correspond to the provided high- resolution images; in other words, each team should down-sample the given images by x4 and use these down-sampled images (by adding noise) as inputs to develop their solutions. Regarding the x2 super-resolution solution, it should be developed using as an input the given mid-resolution images acquired with the camera Axis Q2901-E and as an output, the corresponding high-resolution images, of the same scene, but acquired with the FLIR FC-632O camera. Strictly speaking, the x2 scale proposed solution should be able to tackle both problems, i.e., generating the super-resolution of the images acquired with the Axis Q2901-E camera; as well as mapping images from one domain (Axis Q2901-E camera) to another domain (FLIR FC-632O camera). </p>
+							<P>Datatset can be downloaded through one of the following links:</P>
+							<P><a href="https://bit.ly/3ftx80k" class=content target="_blank"><strong>LINK 1</strong></a></P>
+							<P><a href="https://bit.ly/3A1PpLs" class=content target="_blank"><strong>LINK 2</strong></a></P>
+							<P align="justify">Evaluation metrics and additional information can be checked at the 2nd TISR challenge page: <a href="http://vcipl-okstate.org/pbvs/21/challenge.html" class=content target="_blank"><strong>LINK</strong></a></P>
+							<P align="justify">(In a few days, the CodaLab link will be shared for online evaluation of obtained results.)</P>
+						</div>
+                   </div>    
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="challenge_2">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Multi-modal Aerial View Object Classification Challenge (MAVOC)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p align="justify">Electro-optical (EO) sensors that capture images in the visible spectrum such as RGB and grayscale images, have been most prevalent in the computer vision research area. However, other sensors such as synthetic aperture radar (SAR) can reproduce images from radar signals that in some cases could complement EO sensors when such sensors fail to capture significant information (i.e. weather condition, no visible light, etc)</p>
+							<p align="justify">An ideal automated target recognition system would be based on multi-sensor information to compensate for the shortcomings of either of the sensor-based platforms individually. However, it is currently unclear if/how using EO and SAR data together can improve the performance of automatic target recognition (ATR) systems. Thus, the motivation for this challenge is to understand if and how data from one modality can improve the learning process for the other modality and vice versa. Ideas from domain adaptation, transfer learning or fusion are welcomed to solve this problem.</p>
+							<p align="justify">Jointly with PBVS workshop we have a PBVS challenge on Multi-modal Aerial view Imagery Classification, that is, the task of predicting the class label of an aerial low resolution image based on a set of prior examples of images and their class labels. Two tracks of data are made available: EO + SAR, and SAR.</p>
+							<P align="justify">Dataset is hosted on CodaLabs but will be updated with cleaner data.</P>
+							<P><a href="https://competitions.codalab.org/my/datasets/download/64beeccc-8002-4091-adbb-291915991fe2" class=content target="_blank"><strong>Training Data (EO+SAR) </strong></a></P>
+							<P><a href="https://competitions.codalab.org/my/datasets/download/aba4c0ae-30cc-464d-9882-968790fc6226" class=content target="_blank"><strong>Validation Images (SAR)</strong></a></P>
+							<P><a href="https://competitions.codalab.org/my/datasets/download/8b1e0fa2-6bb7-40ed-b719-0451bd2f8906" class=content target="_blank"><strong>Validation Images (EO)</strong></a></P>
+							<P align="justify">More details and dataset in CodaLab page: <a href="https://competitions.codalab.org/competitions/28123#learn_the_details" class=content target="_blank"><strong>LINK</strong></a></P>
+						</div>
+                   </div>    
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="challenge_3">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Semi-Supervised Hyperspectral Object Detection Challenge (SSHODC)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p align="justify">Semi-supervised learning has developed into a highly researched problem as it minimizes the labeling costs while still achieving performance levels comparable to a fully labeled dataset. However, most semi-supervised learning algorithms are based on pre-trained models on ImageNet and are thus challenging to port to other image domains, especially those with more than three bands. In this competition, we present the application of a newly acquired dataset collected from a university rooftop with a hyperspectral camera to perform object detection. We present a semi-supervised learning challenge with 10% labeled data with three moving object categories: vehicles, bus and bike. Additional details, with links to dataset and CodaLab server are provided <a href="https://sites.google.com/g.rit.edu/sshodc-pbvs-2022" class=content target="_blank"><strong>HERE</strong></a></P>
+						</div>
+                   </div>    
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--
 <div class="container">
 	<div class="row">
