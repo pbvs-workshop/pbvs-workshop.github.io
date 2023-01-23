@@ -47,7 +47,7 @@
         </div>
     </div>
 </div>
-
+<!--
 <div class="section" id="program">
     <div class="container">
         <div class="row">
@@ -58,27 +58,22 @@
                     </div>
                     <div class="panel-body">  
 
-                      <div class="row">
-                        <div class="col-md-12">
-                            <p align="center"><strong>Coming soon ... </strong></p>
-                        </div>
-                      </div> 
+
             </div>
         </div>
     </div>
 </div>
+-->
 
-<!--
 <div class="section" id="announcement">
     <div class="container">
         <div class="row">
-<p align="center"><strong>Announcement:  this year, <u>THREE</u> challenges
-	are being organized in the framework of PBVS'2022 workshop. (Details to be updated in next few weeks) </strong>
+<p align="center"><strong>Announcement: this year, <u>THREE</u> challenges are being organized in the framework of PBVS'2023 workshop. </strong>
 </p>
 </div>
 </div>
 </div>
--->
+
 <!--
 <div class="section" id="announcement">
     <div class="container">
@@ -104,20 +99,47 @@
 </div>
 -->
 
-<!--
+
 <div class="section" id="challenge_1">
     <div class="container">
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">3rd Thermal Image Super-Resolution Challenge (TISR)</h3>
+                    <h3 class="panel-title text-center">4th Thermal Image Super-Resolution Challenge (TISR)</h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <p align="justify">The third thermal image super-resolution (TISR) challenge consists in obtaining super-resolution images at x2 and x4 scales from the given thermal images.</p>
-							<p align="justify">The third edition of this challenge will follow the same setup as the second edition (i.e., just the mid- and high-resolution images from the dataset used in the first edition are considered). Ground truth images for the x4 scale correspond to the provided high- resolution images; in other words, each team should down-sample the given images by x4 and use these down-sampled images (by adding noise) as inputs to develop their solutions. Regarding the x2 super-resolution solution, it should be developed using as an input the given mid-resolution images acquired with the camera Axis Q2901-E and as an output, the corresponding high-resolution images, of the same scene, but acquired with the FLIR FC-632O camera. Strictly speaking, the x2 scale proposed solution should tackle both problems, i.e., generating the super-resolution of the images acquired with the Axis Q2901-E camera and mapping images from one domain (Axis Q2901-E camera) to another domain (FLIR FC-632O camera).</p>
-							<P align="justify">More details and dataset in CodaLab page:: <a href="https://codalab.lisn.upsaclay.fr/competitions/1322" class=content target="_blank"><strong>LINK</strong></a></P>
+                            <p align="justify">The fourth thermal image super-resolution (TISR) challenge consists of two tracks.</p>
+							<p align="justify"><i>Track 1</i> follows the same setup as <a href="http://vcipl-okstate.org/pbvs/22/challenge.html" class=content target="_blank"><strong>the third edition</strong></a> (two kinds of evaluations). Evaluation1, consists in generating a x4 super-resolution thermal image from the given down-sampled by 4 and noised set of images. Evaluation2, consist in generating a x2 SR image from a given mid-resolution set of images acquired with an Axis Q2901-E camera, and as an output, the corresponding high-resolution images, of the same scene, compared with the image acquired with a FLIR FC-632O camera.</p>
+							<P align="justify"><i>Track 2</i> uses a new generated dataset, acquired with cross-spectral sensors (Balser and TAU2 camera). It consists of registered pairs of visible and thermal images of the same scene in 640x480 resolution. The goal of this track is to generate the x8 SR thermal image by using the HR visible image as a guidance for the LR thermal image.</P>
+							<P align="justify">More details and dataset in CodaLab page:</P> 
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9649" class=content target="_blank"><strong>TRACK 1</strong></a></P>
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9666" class=content target="_blank"><strong>TRACK 2</strong></a></P>
+						</div>
+                   </div>    
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Multi-modal Aerial View Object Classification Challenge (MAVOC)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p align="justify">Electro-optical (EO) sensors that capture images in the visible spectrum such as RGB and grayscale images, have been most prevalent in the computer vision research area. However, other sensors such as synthetic aperture radar (SAR) can reproduce images from radar signals that in some cases could complement EO sensors when such sensors fail to capture significant information (i.e. weather condition, no visible light, etc)</p>
+							<p align="justify">An ideal automated target recognition system would be based on multi-sensor information to compensate for the shortcomings of either of the sensor-based platforms individually. However, it is currently unclear if/how using EO and SAR data together can improve the performance of automatic target recognition (ATR) systems. Thus, the motivation for this challenge is to understand if and how data from one modality can improve the learning process for the other modality and vice versa. Ideas from domain adaptation, transfer learning or fusion are welcomed to solve this problem.</p>
+							<P align="justify">In addition to target recognition, this challenge introduces out-of-distribution detection. A robust target recognition system would not only provide a labeled target but also a confidence score for the target. A low score would correspond to an out-of-distribution sample.</P>
+							<P align="justify">More details and dataset in CodaLab page:</P> 
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9477" class=content target="_blank"><strong>TRACK 1</strong></a></P>
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9478" class=content target="_blank"><strong>TRACK 2</strong></a></P>
 						</div>
                    </div>    
             </div>
@@ -131,18 +153,14 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">Multi-modal Aerial View Object Classification Challenge (MAVOC)</h3>
+                    <h3 class="panel-title text-center">Multi-modal Aerial View Imagery Challenge (MAVIC)</h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <p align="justify">Electro-optical (EO) sensors that capture images in the visible spectrum such as RGB and grayscale images, have been most prevalent in the computer vision research area. However, other sensors such as synthetic aperture radar (SAR) can reproduce images from radar signals that in some cases could complement EO sensors when such sensors fail to capture significant information (i.e. weather condition, no visible light, etc)</p>
-							<p align="justify">An ideal automated target recognition system would be based on multi-sensor information to compensate for the shortcomings of either of the sensor-based platforms individually. However, it is currently unclear if/how using EO and SAR data together can improve the performance of automatic target recognition (ATR) systems. Thus, the motivation for this challenge is to understand if and how data from one modality can improve the learning process for the other modality and vice versa. Ideas from domain adaptation, transfer learning or fusion are welcomed to solve this problem.</p>
-							<p align="justify">Jointly with PBVS workshop we have a PBVS challenge on Multi-modal Aerial view Imagery Classification, that is, the task of predicting the class label of an aerial low resolution image based on a set of prior examples of images and their class labels. Two tracks of data are made available: EO + SAR, and SAR.</p>
-							<P align="justify">Dataset is hosted on CodaLabs but will be updated with cleaner data.</P>
+                            <p align="justify">We introduce a new sensor translation competition for 2023. Sensor translation algorithms allow for dataset augmentation and allows for the fusion of information from multiple sensors. Electro-optical (EO) and Synthetic Aperture Radar (SAR) sensors provide a unique environment for translation. The motivation for this challenge is to understand how if and how data from one modality can be translated to another modality. This competition challenges participants to design methods to translate aligned images from the SAR modality to the EO modality.</p>
 							<P align="justify">More details and dataset in CodaLab page:</P> 
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/1388" class=content target="_blank"><strong>TRACK 1</strong></a></P>
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/1392" class=content target="_blank"><strong>TRACK 2</strong></a></P>
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9495" class=content target="_blank"><strong>LINK</strong></a></P>
 						</div>
                    </div>    
             </div>
@@ -151,6 +169,7 @@
     </div>
 </div>
 
+<!--
 <div class="section" id="challenge_3">
     <div class="container">
         <div class="row">
