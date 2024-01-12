@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://vcipl-okstate.org/pbvs/20/call_for_paper.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://vcipl-okstate.org/pbvs/20/images/logo_o_png.ico"><title>Welcome to PBVS '20</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css_files/bootstrap.min.css">
+    <script src="./css_files/jquery.min.js.descarga"></script>
+    <script src="./css_files/bootstrap.min.js.descarga"></script>
+	<script src="./js/scrolling-nav.js"></script>
+    <link href="./css_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./css_files/style.css" rel="stylesheet" type="text/css">
+	<link href="./css_files/scrolling-nav.css" rel="stylesheet">
+<style>
+    #content li {
+       margin-left:-20px;  
+    }   
+</style>
+</head>
+
+<body>
+
+
+<div class="section" id="challenge">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary" id="overview">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Overview</h3>
+                </div>
+                <div class="panel-body">
+                    <p align="justify">Image super-resolution is an ill-posed problem that refers to the task of going from a low-resolution image to a high-resolution image; this can be used in a wide range of real-world applications, such as surveillance and security, medicine, military, amongst others. Deep convolutional network based super-resolution techniques have witnessed remarkable progress, where most of the state-of-the-art are focused on visible domain. Thermal images have become a major tool in several fields, unfortunately due to physical limitations of the technology and the high cost of thermal camera, these images tend to have poor resolution.</p>
+                    <p align="right">&nbsp;</p>
+                </div>
+            </div>
+            <div class="panel panel-primary" id="challenge">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Challenge</h3>
+				</div>
+				 <div class="panel-body" id="content">
+                    <p align="justify">As mentioned above, in general, thermal images have a poor resolution that could be improved by using learning-based traditional super-resolution methods, which have been large used in the visible spectral domain. Learning-based super-resolution methods works by downsampling and adding noises and blur to the given image. These noisy and blurred poor quality images, together with the given images (which are used as the Ground Truths), are used in the learning process.</p>
+					<p align="justify">The approach mention above, has been mostly used to tackle the super-resolution problem, however there are few contributions where the learning process is based on the usage of a pair images (low and a high-resolution images) obtained from different cameras. For the current challenge, a novel thermal image <a class="js-scroll-trigger" href="#dataset">dataset</a> has been created, containing images with three different resolutions (low, mid, high) obtained with three different thermal cameras. <b>The challenge consists in creating a solution capable of generating super-resolution images in x2, x3 and x4 scale from each resolution, in the case of x2 an additional evaluation will be performed by using a HR image obtained from another camera.</b> The results from each team will be <a class="js-scroll-trigger" href="#evaluation">evaluated</a> in two ways.</p>
+					 <p align="right">&nbsp;</p>
+                </div>
+			</div>
+			
+			<div class="panel panel-primary" id="dataset">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Dataset</h3>
+				</div>
+				 <div class="panel-body">
+                    <p align="justify">A dataset has been created using three different thermal cameras, in order to have real scenarios, with different conditions and objects. Each camera has a different resolution (low, mid, high). The technical information is shown below in <a class="js-scroll-trigger" href="#table1">Table 1</a> and illustrations from each camera depicted in <a class="js-scroll-trigger" href="#fig1">Fig. 1</a>.</p>
+					<center>
+					<table class="table table-bordered" id="table1" style="width:60%">
+						<tbody>
+							<tr><th>Image Description&nbsp;&nbsp;&nbsp;</th><th>Brand Camera&nbsp;&nbsp;</th><th>FOV&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Native Resolution&nbsp;&nbsp;</th></tr>
+							<tr><td>Low (LR)</td><td>Axis Domo P1290</td><td style="text-align:right">8mm</td><td style="text-align:right">160x120</td></tr>
+							<tr><td>Mid (MR)</td><td>Axis Q2901-E</td><td style="text-align:right">9mm</td><td style="text-align:right">320x240</td></tr>
+							<tr><td>High (HR)</td><td>FC-632O FLIR</td><td style="text-align:right">13mm</td><td style="text-align:right">640x512*</td></tr>
+						</tbody>
+					</table>
+					<i>Table 1 - Thermal Camera Specification (* Cropped to 640x480).</i>
+					</center>
+					<br/>
+					<center>
+					<img src="img/dataset.png" width="70%" id="fig1" /><br/>
+					<i>Figure 1 - Examples from each camera.</i>
+					</center><br/>
+					
+					<p align="justify">A total of 1021 thermal images were simultaneously taken with each camera. All images are semi-paired. From all these images, 1001 are going to be published (951 for training and 50 for testing), the remaining 20 will be used in the challenge for <a class="js-scroll-trigger" href="#evaluation">validation</a>.</p></p>
+					 <p align="right">&nbsp;</p>
+                </div>
+			</div>
+			
+			<div class="panel panel-primary" id="evaluation">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Evaluation</h3>
+				</div>
+				 <div class="panel-body">
+                    <p align="justify">PSNR and structural similarity (SSIM) measures are going to be corrupted over a small set of images left for evaluating the performance of the proposed solution. Two kinds of evaluations are going to be performed. For the first evaluation, a set of 10 downsampled and noisy images will be shared for traditional evaluation as shown in <a class="js-scroll-trigger" href="#evaluation01">Fig. 2</a>. For the second evaluation a set of 10 real images, from the MR dataset, will be shared. In this case, the obtained SR images will be compared with the corresponding real High Resolution semi-paired images, as shown in <a class="js-scroll-trigger" href="#evaluation02">Fig. 3</a>. For the second evaluation, HR images are going to be registered with the computed SR images in order to use PSRN & SSIM metrics.</p>
+					<center>
+						<img src="img/challenge01.png" width="40%" id="evaluation01" /><br/>
+						<i>Figure 2 - First evaluation diagram (x2, x3, x4).</i>
+						<br/><br/>
+						
+						<img src="img/challenge02.png" width="40%" id="evaluation02" /><br/>
+						<i>Figure 3 - Second evaluation diagram*.</i>
+					</center>
+					<p align="right">&nbsp;</p>
+					<p>*Due to the semi-paired nature, for a fair comparison, the evaluation will be performed over a small region (50% of image size) centered in the image.</p>
+					<p align="right">&nbsp;</p>
+					<p align="justify">
+						<ul>
+							<li>Evaluation 1: will consist of 3 different average values, one per each SR scale (x2, x3, x4). For each scale, noisy downsampled images from each camera will be provided to compute the corresponding SR, which will be evaluated as follows: <br/><center><img src="img/formula01.png" width="20%" /></center>where EVAL is PSNR & SSIM measures, xr corresponds to the SR scale and N is the number of validation images (10 per camera).</li><br/>
+							<li>Evaluation 2: MR images as provided by the camera will be shared; this evaluation will be performed just for the x2 scale. The average evaluation value will be computed as follows:<br/><center><img src="img/formula02.png" width="20%" /></center>where EVAL is PSNR and SSIM measures, and N is the number of validation images (note that EVAL will be applied just on a part of the image to avoid regions without overlap due to the bias of the cameras).</li>
+						</ul>
+					</p>
+					<p align="right">&nbsp;</p>
+					<p align="justify">
+						The super-resolution (SR) results must be submitted in a <a href="structure.zip">zip file</a> together with a short description of the proposed approach to <<a href="mailto:pbvs20.tisr.challenge@gmail.com">pbvs20.tisr.challenge@gmail.com</a>>. The approach with the higher performance in most evaluation metrics will be the winner of the challenge.</a></p>
+						<center>
+						<table class="table table-bordered" id="table2" style="width:40%">
+							<tbody>
+								<tr><th>Scale&nbsp;&nbsp;&nbsp;</th><th>Evaluation 1&nbsp;&nbsp;</th><th>Evaluation 2</th></tr>
+								<tr><td>x2</td><td>PSRN/SSIM</td><td>PSRN/SSIM</td></tr>
+								<tr><td>x3</td><td>PSRN/SSIM</td><td style="text-align:center">---</td></tr>
+								<tr><td>x4</td><td>PSRN/SSIM</td><td style="text-align:center">---</td></tr>
+							</tbody>
+						</table>
+						<i>Table 2 - Evaluations measures.</i>
+						<center>
+					</p>
+					<p align="right">&nbsp;</p>
+                </div>
+			</div>
+			
+			<!--div class="panel panel-primary" id="awards">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Awards</h3>
+				</div>
+				 <div class="panel-body">
+						<div class="col-md-12">
+							<p align="center"><strong>Comming soon</strong></p>
+						</div>
+                </div>
+			</div-->
+			
+			<div class="panel panel-primary" id="dates">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Important Dates</h3>
+				</div>
+				 <div class="panel-body">
+                    <p align="justify">
+						<ul>
+						<li>Registration open & datase released: December 10, 2019</li>
+						<li>Evaluation images distributed: February 21, 2020</li>
+						<li>Deadline for challenge & result submitted: <b>February 28, 2020</b></li>
+						<li>Winner announcement: June 14, 2020</li>
+					</ul>
+					</p>
+                </div>
+			</div>
+			
+			<div class="panel panel-primary" id="">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Register</h3>
+				</div>
+				 <div class="panel-body">
+                    <p align="justify"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCAxSJGv-IUaYo4R5fNLYJvZKTIfvAkoHYarjVqOxayWB4rg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe></p>
+					 <p align="right">&nbsp;</p>
+                </div>
+			</div>
+			
+			<div class="panel panel-primary" id="">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Contact Us</h3>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+							<p align="center"><strong>Rafael Rivadeneira</strong></p>
+							<p align="center">Guayaquil, Ecuador</p>
+							<p align="center"><a href="mailto:rrivaden@espol.edu.ec" class="content">rrivaden@espol.edu.ec</a></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+            
+        </div>
+    </div>
+</div>
+
+
+</body></html>
