@@ -99,23 +99,23 @@
 </div>
 -->
 
-<!--
+
 <div class="section" id="challenge_1">
     <div class="container">
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">4th Thermal Image Super-Resolution Challenge (TISR)</h3>
+                    <h3 class="panel-title text-center">5th Thermal Image Super-Resolution Challenge (TISR)</h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <p align="justify">The fourth thermal image super-resolution (TISR) challenge consists of two tracks.</p>
-							<p align="justify"><i>Track 1</i> follows the same setup as <a href="http://vcipl-okstate.org/pbvs/22/challenge.html" class=content target="_blank"><strong>the third edition</strong></a> (two kinds of evaluations). Evaluation1, consists in generating a x4 super-resolution thermal image from the given down-sampled by 4 and noised set of images. Evaluation2, consist in generating a x2 SR image from a given mid-resolution set of images acquired with an Axis Q2901-E camera, and as an output, the corresponding high-resolution images, of the same scene, compared with the image acquired with a FLIR FC-632O camera.</p>
-							<P align="justify"><i>Track 2</i> uses a new generated dataset, acquired with cross-spectral sensors (Balser and TAU2 camera). It consists of registered pairs of visible and thermal images of the same scene in 640x480 resolution. The goal of this track is to generate the x8 SR thermal image by using the HR visible image as a guidance for the LR thermal image.</P>
-							<P align="justify">More details and dataset in CodaLab page:</P> 
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9649" class=content target="_blank"><strong>TRACK 1</strong></a></P>
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9666" class=content target="_blank"><strong>TRACK 2</strong></a></P>
+                            <p align="justify">The fifth Thermal Image Super-Resolution challenge introduces a recently acquired benchmark dataset captured with cross-spectral sensors - visible (Balser camera) and thermal (TAU2 camera). It consists of two Tracks. </p>
+							<p align="justify"><i>Track 1</i> features a single evaluation task, requiring participants to generate an x8 super-resolution thermal image from the given low-resolution thermal images. The challenge involves utilizing a bicubic down-sampled by 8 and noiseless set of images as input. </p>
+							<P align="justify"><i>Track 2</i> consists of two evaluation tasks using the newly acquired dataset. The first evaluation involves generating an x8 super-resolution thermal image, while the second evaluation requires participants to generate an x16 super-resolution thermal image. In both cases, the provided high-resolution visible image should be used as a guidance for enhancing the low-resolution thermal image. The proposed architecture in this track must use visible images as guidance. </P>
+							<P align="justify">For further details and access to the dataset, please refer to the CodaLab page: </P> 
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/17013" class=content target="_blank"><strong>TRACK 1</strong></a></P>
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/17014" class=content target="_blank"><strong>TRACK 2</strong></a></P>
 						</div>
                    </div>    
             	</div>
@@ -129,17 +129,16 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">Multi-modal Aerial View Object Classification Challenge (MAVOC)</h3>
+                    <h3 class="panel-title text-center">Multi-modal Aerial View Imagery Challenge: Classification (MAVIC-C)</h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <p align="justify">Electro-optical (EO) sensors that capture images in the visible spectrum such as RGB and grayscale images, have been most prevalent in the computer vision research area. However, other sensors such as synthetic aperture radar (SAR) can reproduce images from radar signals that in some cases could complement EO sensors when such sensors fail to capture significant information (i.e. weather condition, no visible light, etc)</p>
-							<p align="justify">An ideal automated target recognition system would be based on multi-sensor information to compensate for the shortcomings of either of the sensor-based platforms individually. However, it is currently unclear if/how using EO and SAR data together can improve the performance of automatic target recognition (ATR) systems. Thus, the motivation for this challenge is to understand if and how data from one modality can improve the learning process for the other modality and vice versa. Ideas from domain adaptation, transfer learning or fusion are welcomed to solve this problem.</p>
-							<P align="justify">In addition to target recognition, this challenge introduces out-of-distribution detection. A robust target recognition system would not only provide a labeled target but also a confidence score for the target. A low score would correspond to an out-of-distribution sample.</P>
+                            <p align="justify">Electro-optical (EO) sensors that capture images in the visible spectrum such as RGB and grayscale images, have been most prevalent in the computer vision research area. However, other sensors such as synthetic aperture radar (SAR) can reproduce images from radar signals that in some cases could complement EO sensors when such sensors fail to capture significant information (i.e. weather condition, no visible light, etc.). </p>
+							<p align="justify">An ideal automated target recognition system would be based on multi-sensor information to compensate for the shortcomings of either of the sensor-based platforms individually. However, it is currently unclear if/how using EO and SAR data together can improve the performance of automatic target recognition (ATR) systems. Thus, the motivation for this challenge is to understand if and how data from one modality can improve the learning process for the other modality and vice versa. Ideas from domain adaptation, transfer learning or fusion are welcomed to solve this problem. </p>
+							<P align="justify">In addition to target recognition, this challenge focuses on accuracy and out-of-distribution detection. A robust target recognition system would not only provide a labeled target but also a confidence score for the target. A low score would correspond to an out-of-distribution sample. </P>
 							<P align="justify">More details and dataset in CodaLab page:</P> 
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9966" class=content target="_blank"><strong>TRACK 1</strong></a></P>
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9967" class=content target="_blank"><strong>TRACK 2</strong></a></P>
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/17222" class=content target="_blank"><strong>LINK</strong></a></P>
 						</div>
                    </div>    
             </div>
@@ -153,14 +152,14 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">Multi-modal Aerial View Imagery Challenge (MAVIC)</h3>
+                    <h3 class="panel-title text-center">Multi-modal Aerial View Imagery Challenge: Translation (MAVIC-T) </h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <p align="justify">We introduce a new sensor translation competition for 2023. Sensor translation algorithms allow for dataset augmentation and allows for the fusion of information from multiple sensors. Electro-optical (EO) and Synthetic Aperture Radar (SAR) sensors provide a unique environment for translation. The motivation for this challenge is to understand how if and how data from one modality can be translated to another modality. This competition challenges participants to design methods to translate aligned images from the SAR modality to the EO modality.</p>
+                            <p align="justify">We iterate on the sensor translation challenged introduced at PBVS 2023. Sensor translation algorithms allow for dataset augmentation and enables the fusion of information from multiple sensors. Multi-modal sensor translation, and data generation has wide ranging applications. We introduce a custom, multi-modal paired image dataset consisting of Electro-optical (EO) and Synthetic Aperture Radar (SAR) paired images, and RGB-IR paired images. The motivation for this challenge is to facilitate state of the art techniques in high-fidelity, conditioned data generation. This competition challenges participants to design general methods to translate aligned images from multiple modalities. </p>
 							<P align="justify">More details and dataset in CodaLab page:</P> 
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/9968" class=content target="_blank"><strong>LINK</strong></a></P>
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/17224" class=content target="_blank"><strong>LINK</strong></a></P>
 						</div>
                    </div>    
             </div>
@@ -304,7 +303,7 @@
 							<li>Evaluation 1: 10 noisy down-sampled images, from HR camera, will be provided to compute the corresponding SR. Bicubic function should be used for down-sampling at scale of 4 and Gaussian noise** with mean=0 and sigma=10 should be considered. Results will be evaluated as follows: <br/><center><img src="challenge/img/formula01.PNG" width="20%" /></center>where EVAL is PSNR & SSIM measures and N is the number of validation images.<br/><br/>** On python for Gaussian noise, use np.random.normal(mean, sigma, img.shape)</li><br/>
 							
 							<li>Evaluation 2: MR images as provided by the camera will be shared; this evaluation will be performed just for the x2 scale. The average evaluation value will be computed as follows:<br/><center><img src="challenge/img/formula02.PNG" width="20%" /></center>where EVAL is PSNR and SSIM measures, and N is the number of validation images (note that EVAL will be applied just on a part of the image to avoid regions without overlap due to the bias of the cameras).</li><br/>
-						<!--- 
+						
 						R_{\times 4}=\frac{1}{N}\sum_{1}^{N}\textit{EVAL}\left ( GT_{N},SR_{N}^{\times 4} \right )
 ---
 R_{\times 2}=\frac{1}{N}\sum_{1}^{N}\overline{\textit{EVAL}}\left ( GT_{N},SR_{N}^{\times 2} \right )
@@ -346,7 +345,7 @@ R_{\times 2}=\frac{1}{N}\sum_{1}^{N}\overline{\textit{EVAL}}\left ( GT_{N},SR_{N
                 </div>
 			</div>
 			
-			<!--div class="panel panel-primary" id="awards">
+			div class="panel panel-primary" id="awards">
 				<div class="panel-heading">
 					<h3 class="panel-title text-center">Awards</h3>
 				</div>
