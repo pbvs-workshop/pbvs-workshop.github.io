@@ -1,0 +1,37 @@
+alexander	aved	alexander.aved@us.af.mil	US Air Force Research Lab		 
+Aly	Farag	aly.farag@louisville.edu	University of Louisville	United States	 
+Asif	Mehmood	asif.mehmood.1@us.af.mil	Air Force Research Laboratory, USA		 
+Aykut	Koc	aykutkoc@aselsan.com.tr	Aselsan Research Center		 
+Bernard	Abayowa	bernard.abayowa.1@us.af.mil	AFRL		 
+Collen	Roller	collen.roller.1@us.af.mil	Air Force Research Laboratory, USA		 
+Cunjian	Chen	cunjian.chen@outlook.com	Michigan State University	United States	 
+Djemel	Ziou	Djemel.Ziou@USherbrooke.ca	Universite de Sherbrooke	Canada	 
+Erhan	Gundogdu	egundogdu@aselsan.com.tr	Aselsan Research Center		 
+Erik	Blasch	erik.blasch.1@us.af.mil	Air Force Research Lab		 
+Firooz	Sadjadi	firooz.a.sadjadi@lmco.com	Lockheed Martin Corp		 
+Gang	Hua	ganghua@gmail.com	Wormpex AI Research	United States	 
+Guillaume-Alexandre	Bilodeau	guillaume-alexandre.bilodeau@polymtl.ca	École Polytechnique de Montréal		 
+Guoliang	Fan	guoliang.fan@okstate.edu	Oklahoma State University		 
+Haibin	Ling	hbling@temple.edu	Temple University	United States	 
+Ishwar	Kulkarni	ishwark@nvidia.com	Nvidia, USA		 
+Jason	Isaacs	jci02c@my.fsu.edu	Naval Surface Warfare Center		 
+Katsushi	Ikeuchi	katsuike@microsoft.com	Microsoft Research Asia		 
+Liang	Du	liad@microsoft.com	Microsoft		 
+Liangjiang	Yu	liangjiang.yu@okstate.edu	Oklahoma State University		 
+Margrit	Betke	betke@bu.edu	Boston University	United States	 
+Mark	Koch	mwkoch@sandia.gov	Sandia National Laboratories	
+Mark	Keck	mark.keck.jr@gmail.com	RightHand Robotics		 
+Maryam	Rahnemoonfar	maryam.rahnemoonfar@tamucc.edu	Texas A&M University- Corpus Christi		 
+Michael	Arens	michael.arens@iosb.fraunhofer.de	Fraunhofer IOSB		 
+Michael	Teutsch	michael.teutsch@hensoldt.net	Hensoldt Optronics		
+Nizar	Bouguila	nizar.bouguila@concordia.ca	Concordia University		 
+Ozge	Ozcanli	ozge@visionsystemsinc.com	VSI		 
+Ozge	Whiting	ozge.whiting@ge.com	Avitas Systems		 
+Pengpeng	Liang	pliang@temple.edu	Amazon		 
+Riad	Hammoud	riad.hammoud@baesystems.com	BAE Systems		
+Stan	Li	stan.zq.li@qq.com	National Laboratory of Pattern Recognition		 
+Swarup	Shanti	shanti@uurmi.com	UURMI		 
+Vijayan	Asari	vasari1@udayton.edu	University of Dayton		 
+Wesam	Sakla	sakla@llnl.gov	Lawrence Livermore National Laboratory		 
+William	Reynolds	william.reynolds@teledyne.com	Teledyne Scientific Company, LLC		 
+Yi      Ding        xddingyi@gmail.com Gemalto
