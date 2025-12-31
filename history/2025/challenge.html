@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="images/logo_o_png.ico"><title>Welcome to PBVS '25</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./css/jquery.min.js.descarga"></script>
+    <script src="./css/bootstrap.min.js.descarga"></script>
+	<script src="./js/scrolling-nav.js"></script>
+    <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+	<link href="./css/scrolling-nav.css" rel="stylesheet">
+<style>
+    #content li {
+       margin-left:-20px;  
+    }   
+</style>
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" id="navi_bar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="history.html" style="color:rgb(111,84,153);"><span><strong>21 YEARS of PBVS</strong></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="call_for_paper.html"><strong>Call for Paper</strong></a></li>
+                <li  class="active"><a href="challenge.html"><strong>Challenges</strong></a></li>
+                <li><a href="submission.html"><strong>Submission</strong></a></li>
+                <li><a href="organization.html"><strong>Organization</strong></a></li>
+                <li><a href="program.html"><strong>Program</strong></a></li>
+                <li><a href="keynotes.html"><strong>Keynotes</strong></a></li>
+                <li><a href="datasets.html"><strong>Datasets</strong></a></li>
+                <li><a href="awards.html"><strong>Awards</strong></a></li>
+                <li><a href="history.html"><strong>History</strong></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div class="section" id="announcement">
+    <div class="container">
+        <div class="row">
+<p align="center"><strong>Announcement: this year, <u>FOUR</u> challenges are being organized in the framework of PBVS 2025 workshop.</strong>
+</p>
+</div>
+</div>
+
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">6th Thermal Image Super-Resolution challenge (TISRc)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p align="justify">The sixth Thermal Image Super-Resolution is a new edition of last year's challenge, which considers a cross-spectral dataset captured with visible (Basler camera) and thermal (TAU2 camera) sensors. It consists of two tracks. </p>
+							<p align="justify"><i>Track 1</i> features a single evaluation task that requires participants to generate an x8 super-resolution thermal image from the given low-resolution thermal images. The challenge uses a noiseless set of images, bicubic down-sampled by a factor of 8, as input.</p>
+							<P align="justify"><i>Track 2</i> consists of two evaluation tasks using the above-mentioned dataset. The <i>first evaluation</i> involves generating an x8 super-resolution thermal image, while the <i>second evaluation</i> requires participants to generate an x16 super-resolution thermal image. In both cases, the provided high-resolution visible image should be used as guidance for enhancing the low-resolution thermal image. The architectures proposed in this track must incorporate visible images as guidance. </P>
+							<P align="justify">For further details and access to the dataset, please refer to the CodaLab page: </P> 
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/21247" class=content target="_blank"><strong>TRACK 1</strong></a></P>
+							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/21248" class=content target="_blank"><strong>TRACK 2</strong></a></P>
+						</div>
+                   </div>    
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary" id="challenge_2">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">4th Multi-modal Aerial View Imagery Challenge: Classification (MAVIC-C)</h3>
+                </div>
+                <div class="panel-body">
+                    <p align="justify">Electro-optical (EO) sensors that capture images in the visible spectrum such as RGB and grayscale images, have been most prevalent in the computer vision research area. However, other sensors such as synthetic aperture radar (SAR) can reproduce images from radar signals that in some cases could complement EO sensors when such sensors fail to capture significant information (i.e. weather conditions, no visible light, etc.).</p>
+                    <p align="justify">An ideal automated target recognition system would be based on multi-sensor information to compensate for the shortcomings of either of the sensor-based platforms individually. However, it is currently unclear if/how using EO and SAR data together can improve the performance of automatic target recognition (ATR) systems. Thus, the motivation for this challenge is to understand if and how data from one modality can improve the learning process for the other modality and vice versa. Ideas from domain adaptation, transfer learning or fusion are welcomed to solve this problem.</p>
+                    <p align="justify">In addition to target recognition, this challenge focuses on accuracy and out-of-distribution detection. A robust target recognition system would not only provide a labeled target but also a confidence score for the target. A low score would correspond to an out-of-distribution sample.</p>
+                    <p align="justify">More details and dataset in CodaLab page:</P> 
+                        <P><a href="https://codalab.lisn.upsaclay.fr/competitions/21243" class=content target="_blank"><strong>LINK</strong></a></P>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">            
+            <div class="panel panel-primary" id="challenge_3">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">3rd Multi-modal Aerial View Imagery Challenge: Translation (MAVIC-T)</h3>
+                </div>
+                <div class="panel-body">
+                    <p align="justify">We iterate on the sensor translation challenge introduced at PBVS 2023. Sensor translation algorithms allow for dataset augmentation and enable the fusion of information from multiple sensors. Multi-modal sensor translation and data generation has wide ranging applications. We introduce a custom, multi-modal paired image dataset consisting of Electro-optical (EO) and Synthetic Aperture Radar (SAR) paired images, and RGB-IR paired images. The motivation for this challenge is to facilitate state of the art techniques in high-fidelity, conditioned data generation. This competition challenges participants to design general methods to translate aligned images from multiple modalities.</p>
+                    <p align="justify">
+                    More details and dataset in CodaLab page:
+                    </p>
+                    <p><a href="https://codalab.lisn.upsaclay.fr/competitions/21244" class="content" target="_blank"><strong>LINK</strong></a></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">            
+            <div class="panel panel-primary" id="challenge_4">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">1st Thermal Pedestrian Multiple Object Tracking Challenge (TP-MOT)</h3>
+                </div>
+                <div class="panel-body">
+                    <p align="justify">The Thermal MOT Challenge is dedicated to advancing object tracking research in thermal imaging, a critical modality for scenarios where visible-light sensors may fail, such as low-light conditions, nighttime, and adverse weather. Unlike RGB-based datasets, which dominate MOT research, thermal imaging provides unique advantages by capturing long-wavelength infrared (LWIR) data, making it an essential tool for robust tracking in challenging environments.</p>
+                    <p align="justify">This challenge introduces the Thermal MOT Dataset, the first large-scale thermal imaging dataset annotated specifically for multiple object tracking. The dataset comprises 30 sequences (9000 frames) collected at five urban intersections using a FLIR ADK thermal sensor. These sequences include diverse scenes and object types in public spaces, providing a comprehensive benchmark for thermal MOT research.</p>
+                    <p align="justify">Participants are invited to develop innovative algorithms that leverage thermal data to improve tracking accuracy and robustness. The challenge emphasizes single-modality tracking in the thermal domain and encourages approaches that address the unique characteristics of thermal imagery, such as noise, resolution, and contrast.</p>
+                    <p align="justify">Dataset download link: <a href="https://uottawa-my.sharepoint.com/personal/welah096_uottawa_ca/_layouts/15/guestaccess.aspx?share=EcbEBO2k3ZdDttBxcH_1CaEBPJJA42_aF7o6WQxhcCWvkg&e=zaCT9a">Sharepoint</a></p>
+                    <p align="justify">Rules</p>
+                    <ul>
+                        <li>Solutions must adhere to the tracking-by-detection paradigm in a two-stage approach. An object detection model must be used to predict boxes, and a separate model/algorithm can be used to associate boxes into tracks.</li>
+                        <li>For a fair comparison of MOT algorithms, the detectors used can be either YOLOV5s or YOLOV8s</li>
+                        <li>Ground truth annotations for the training set are provided. Models must not be trained on images from the validation set.</li>
+                        <li>Same tracking paramters should be used for all 6 test sequences. No unique parameters must be changed based on any particular sequence.</li>
+                    </ul>
+
+                    <h4>Submission Guidelines</h4>
+                    <ul>
+                        <li>You must submit one zip file containing 6 txt files, one for each val sequence. The filenames in the zip file must be: seq17_thermal.txt, seq22_thermal.txt, seq2_thermal.txt, seq47_thermal.txt, seq54_thermal.txt, seq66_thermal.txt</li>
+                        <li>Every submission requires having a link to a github repository where your source code and trained models are stored. This will be used by the challenge administrators to verify your results. If it is a private repository, please add "wassimea" to the repository so we can verify your results.</li>
+                        <li>The txt files represent the tracking results using the MOT format</li>
+                        <li>This script <a href="https://github.com/wassimea/thermalMOT/blob/main/utils/infer_results.py">https://github.com/wassimea/thermalMOT/blob/main/utils/infer_results.py</a> shows an example of how to generate the results in the correct format.</li>
+                        <li>If you aim to publish your work using this dataset, kindly consider citing the paper that introduced it <a href="https://arxiv.org/abs/2411.12943">https://arxiv.org/abs/2411.12943</a> 
+                            @article{ahmar2024enhancing,
+                            title={Enhancing Thermal MOT: A Novel Box Association Method Leveraging Thermal Identity and Motion Similarity},
+                            author={Ahmar, Wassim El and Kolhatkar, Dhanvin and Nowruzi, Farzan and Laganiere, Robert},
+                            journal={arXiv preprint arXiv:2411.12943},
+                            year={2024}
+                        }</li>
+                        <li>For any questions, please contact Dr. Wassim El Ahmar at welahmar@uottawa.ca</li>
+                    </ul>
+                    <p align="justify">Submission will take place on the EvalAI platform: <a href="https://eval.ai/web/challenges/challenge-page/2439/overview">https://eval.ai/web/challenges/challenge-page/2439/overview</a>.</p>
+                    <p align="justify">We strongly encourage you to submit a paper where you introduce your architecture and results to our workshop, where they will be considered for publication in the proceedings of CVPR2025 Workshops.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4>Challenge Results</h4>
+<p align="center">
+    <img src="images/2025_Challenge_Results.png" alt="Results" style="max-width:100%; height:auto; border:1px solid #ccc; padding:5px;">
+</p>
+
+</body></html>
