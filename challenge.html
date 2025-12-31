@@ -62,7 +62,7 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">6th Thermal Image Super-Resolution challenge (TISRc)</h3>
+                    <h3 class="panel-title text-center">7th Thermal Image Super-Resolution Challenge (TISR)</h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
@@ -71,8 +71,8 @@
 							<p align="justify"><i>Track 1</i> features a single evaluation task that requires participants to generate an x8 super-resolution thermal image from the given low-resolution thermal images. The challenge uses a noiseless set of images, bicubic down-sampled by a factor of 8, as input.</p>
 							<P align="justify"><i>Track 2</i> consists of two evaluation tasks using the above-mentioned dataset. The <i>first evaluation</i> involves generating an x8 super-resolution thermal image, while the <i>second evaluation</i> requires participants to generate an x16 super-resolution thermal image. In both cases, the provided high-resolution visible image should be used as guidance for enhancing the low-resolution thermal image. The architectures proposed in this track must incorporate visible images as guidance. </P>
 							<P align="justify">For further details and access to the dataset, please refer to the CodaLab page: </P> 
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/21247" class=content target="_blank"><strong>TRACK 1</strong></a></P>
-							<P><a href="https://codalab.lisn.upsaclay.fr/competitions/21248" class=content target="_blank"><strong>TRACK 2</strong></a></P>
+							<P><a href="https://www.codabench.org/competitions/12339/" class=content target="_blank"><strong>TRACK 1</strong></a></P>
+							<P><a href="https://www.codabench.org/competitions/12145/" class=content target="_blank"><strong>TRACK 2</strong></a></P>
 						</div>
                    </div>    
             	</div>
@@ -85,14 +85,15 @@
         <div class="row">
             <div class="panel panel-primary" id="challenge_2">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">4th Multi-modal Aerial View Imagery Challenge: Classification (MAVIC-C)</h3>
+                    <h3 class="panel-title text-center">5th Multi-modal Aerial View Imagery Challenge: Classification (MAVIC-C)</h3>
                 </div>
                 <div class="panel-body">
                     <p align="justify">Electro-optical (EO) sensors that capture images in the visible spectrum such as RGB and grayscale images, have been most prevalent in the computer vision research area. However, other sensors such as synthetic aperture radar (SAR) can reproduce images from radar signals that in some cases could complement EO sensors when such sensors fail to capture significant information (i.e. weather conditions, no visible light, etc.).</p>
                     <p align="justify">An ideal automated target recognition system would be based on multi-sensor information to compensate for the shortcomings of either of the sensor-based platforms individually. However, it is currently unclear if/how using EO and SAR data together can improve the performance of automatic target recognition (ATR) systems. Thus, the motivation for this challenge is to understand if and how data from one modality can improve the learning process for the other modality and vice versa. Ideas from domain adaptation, transfer learning or fusion are welcomed to solve this problem.</p>
                     <p align="justify">In addition to target recognition, this challenge focuses on accuracy and out-of-distribution detection. A robust target recognition system would not only provide a labeled target but also a confidence score for the target. A low score would correspond to an out-of-distribution sample.</p>
                     <p align="justify">More details and dataset in CodaLab page:</P> 
-                        <P><a href="https://codalab.lisn.upsaclay.fr/competitions/21243" class=content target="_blank"><strong>LINK</strong></a></P>
+                        <!-- <P><a href="https://codalab.lisn.upsaclay.fr/competitions/21243" class=content target="_blank"><strong>LINK</strong></a></P> -->
+                         <p>Codabench link TBA</p>
                 </div>
             </div>
         </div>
@@ -103,14 +104,15 @@
         <div class="row">            
             <div class="panel panel-primary" id="challenge_3">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">3rd Multi-modal Aerial View Imagery Challenge: Translation (MAVIC-T)</h3>
+                    <h3 class="panel-title text-center">4th Multi-modal Aerial View Imagery Challenge: Translation (MAVIC-T)</h3>
                 </div>
                 <div class="panel-body">
                     <p align="justify">We iterate on the sensor translation challenge introduced at PBVS 2023. Sensor translation algorithms allow for dataset augmentation and enable the fusion of information from multiple sensors. Multi-modal sensor translation and data generation has wide ranging applications. We introduce a custom, multi-modal paired image dataset consisting of Electro-optical (EO) and Synthetic Aperture Radar (SAR) paired images, and RGB-IR paired images. The motivation for this challenge is to facilitate state of the art techniques in high-fidelity, conditioned data generation. This competition challenges participants to design general methods to translate aligned images from multiple modalities.</p>
                     <p align="justify">
                     More details and dataset in CodaLab page:
                     </p>
-                    <p><a href="https://codalab.lisn.upsaclay.fr/competitions/21244" class="content" target="_blank"><strong>LINK</strong></a></p>
+                    <!-- <p><a href="https://codalab.lisn.upsaclay.fr/competitions/21244" class="content" target="_blank"><strong>LINK</strong></a></p> -->
+                    <p>Codabench link TBA</p>
                     </p>
                 </div>
             </div>
@@ -123,7 +125,7 @@
         <div class="row">            
             <div class="panel panel-primary" id="challenge_4">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">1st Thermal Pedestrian Multiple Object Tracking Challenge (TP-MOT)</h3>
+                    <h3 class="panel-title text-center">2nd Thermal Pedestrian Multiple Object Tracking Challenge (TP-MOT)</h3>
                 </div>
                 <div class="panel-body">
                     <p align="justify">The Thermal MOT Challenge is dedicated to advancing object tracking research in thermal imaging, a critical modality for scenarios where visible-light sensors may fail, such as low-light conditions, nighttime, and adverse weather. Unlike RGB-based datasets, which dominate MOT research, thermal imaging provides unique advantages by capturing long-wavelength infrared (LWIR) data, making it an essential tool for robust tracking in challenging environments.</p>
@@ -136,25 +138,32 @@
                         <li>For a fair comparison of MOT algorithms, the detectors used can be either YOLOV5s or YOLOV8s</li>
                         <li>Ground truth annotations for the training set are provided. Models must not be trained on images from the validation set.</li>
                         <li>Same tracking paramters should be used for all 6 test sequences. No unique parameters must be changed based on any particular sequence.</li>
+                        <li><strong>To be considered in the competition, submissions must introduce an algorithmic or model improvement on existing solutions. Submissions that rely simply on hyper-parameter tuning or brute force tuning will not be considered.</strong></li>
                     </ul>
 
-                    <h4>Submission Guidelines</h4>
-                    <ul>
-                        <li>You must submit one zip file containing 6 txt files, one for each val sequence. The filenames in the zip file must be: seq17_thermal.txt, seq22_thermal.txt, seq2_thermal.txt, seq47_thermal.txt, seq54_thermal.txt, seq66_thermal.txt</li>
-                        <li>Every submission requires having a link to a github repository where your source code and trained models are stored. This will be used by the challenge administrators to verify your results. If it is a private repository, please add "wassimea" to the repository so we can verify your results.</li>
-                        <li>The txt files represent the tracking results using the MOT format</li>
-                        <li>This script <a href="https://github.com/wassimea/thermalMOT/blob/main/utils/infer_results.py">https://github.com/wassimea/thermalMOT/blob/main/utils/infer_results.py</a> shows an example of how to generate the results in the correct format.</li>
-                        <li>If you aim to publish your work using this dataset, kindly consider citing the paper that introduced it <a href="https://arxiv.org/abs/2411.12943">https://arxiv.org/abs/2411.12943</a> 
-                            @article{ahmar2024enhancing,
-                            title={Enhancing Thermal MOT: A Novel Box Association Method Leveraging Thermal Identity and Motion Similarity},
-                            author={Ahmar, Wassim El and Kolhatkar, Dhanvin and Nowruzi, Farzan and Laganiere, Robert},
-                            journal={arXiv preprint arXiv:2411.12943},
-                            year={2024}
-                        }</li>
-                        <li>For any questions, please contact Dr. Wassim El Ahmar at welahmar@uottawa.ca</li>
-                    </ul>
-                    <p align="justify">Submission will take place on the EvalAI platform: <a href="https://eval.ai/web/challenges/challenge-page/2439/overview">https://eval.ai/web/challenges/challenge-page/2439/overview</a>.</p>
-                    <p align="justify">We strongly encourage you to submit a paper where you introduce your architecture and results to our workshop, where they will be considered for publication in the proceedings of CVPR2025 Workshops.</p>
+                    <p align="justify">Codabench link TBA.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">            
+            <div class="panel panel-primary" id="challenge_5">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">1st Hyperspectral Image Super-Resolution Challenge (HISR)</h3>
+                </div>
+                <div class="panel-body">
+                    <p align="justify">The first edition of this challenge introduces hyperspectral data with real LR–HR pairs. Each scene is captured twice:</p>
+                    <ol>
+                        <li>low-resolution hyperspectral cube via a low-magnification lens</li>
+                        <li>high-resolution hyperspectral cube via a high-magnification lens of the same field of view</li>
+                    </ol>
+                    <p> Task: x4 Real Super-Resolution</p>
+                    <p>Participants must generate a x4 HR hyperspectral image from the given real LR input. Unlike synthetic bicubic setups, the LR data reflect true optical blur, resolution loss, and sensor noise. Evaluation considers a combination of spatial and spectral fidelity metrics.</p>
+                    <p>Dataset access and submission details are available on the CodaBench page (link TBA)</p>
                     </p>
                 </div>
             </div>
@@ -162,9 +171,57 @@
     </div>
 </div>
 
-<h4>Challenge Results</h4>
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">            
+            <div class="panel panel-primary" id="challenge_6">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">1st Mars Landslide Segmentation Challenge (MARS-LS)</h3>
+                </div>
+                <div class="panel-body">
+                    <p align="justify">Detecting landslides on Mars is fundamentally more challenging than on Earth due to the absence of vegetation and the highly uniform, desert-like surface. Electro-optical imagery alone often lacks sufficient contrast to distinguish landslide features from surrounding terrain, as Martian landslides must be identified primarily through subtle morphological cues such as scarps, hummocky deposits, and runout patterns. While multi-modal data, such as RGB or grayscale imagery, digital elevation models, slope, and thermal inertia, can provide complementary information, each modality differs in spatial resolution, noise, and physical meaning, making direct integration difficult.</p>
+                    <p align="justify"> An ideal Maritain landslide detection system would effectively leverage multi-modal data to overcome the limitations of individual modalities and improve robustness across diverse terrains. However, it remains unclear how best to fuse these heterogeneous data sources to enhance learning, generalization, and out-of-distribution performance, especially under limited labeled data. This challenge motivates the exploration of multi-modal fusion, attention-based models, and transfer or domain adaptation techniques to develop robust deep networks that achieve accurate landslide segmentation while maintaining strong generalization to unseen Martian regions.</p>
+                    <p>Participants must generate a x4 HR hyperspectral image from the given real LR input. Unlike synthetic bicubic setups, the LR data reflect true optical blur, resolution loss, and sensor noise. Evaluation considers a combination of spatial and spectral fidelity metrics.</p>
+                    <p>Dataset access and submission details are available on the CodaBench page (link TBA)</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="challenge_1">
+    <div class="container">
+        <div class="row">            
+            <div class="panel panel-primary" id="challenge_7">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">1st Unified Pedestrian Pose Estimation in Thermal Imaging Challenge (UPPET)</h3>
+                </div>
+                <div class="panel-body">
+                    <p align="justify">In the context of human pose estimation (HPE) using thermal surveillance imagery, generalizing across different sensors is challenged by domain gaps. These gaps stem from variations in sensor specifications, environmental conditions, and calibration inconsistencies, which can affect the thermal characteristics and representations of human figures. This challenge aims to spotlight the problem of domain gaps in a real-world thermal surveillance context and highlight the challenges and limitations of existing methods to provide a direction for future research.</p>
+                    <p align="justify"> In order to dynamize the fields of HPE in Thermal Imaging for realistic scenarios, we propose specially selected challenging splits for a challenge with three tracks:</p>
+                    <ul>
+                        <li>
+                            Track 1: Generalization of HPE in Thermal Imaging using cross-validation scheme: The task is to train a pose estimator that accurately predicts persons’ keypoints under domain shifts.
+                        </li>
+                        <li>
+                            Track 2: HPE in Thermal Imaging using specialization scheme: The task is to train a pose estimator that accurately predicts persons’ keypoints in thermal imaging.
+                        </li>
+                        <li>
+                            Track 3: HPE on Thermal Imaging based on Synthetic Data: The task is to generate own thermal synthetic data for training. Explicitly, the participants should use generative networks (stable diffusion..etc.) to generate synthetic thermal training data. Participants must release and opensource their synthetic data. After training only on synthetic data, the pose estimator is evaluated using specialization scheme on real data.
+                        </li>
+                    </ul>
+                    <p>Dataset access and submission details are available on the Eval.AI page (link TBA)</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <h4>Challenge Results</h4>
 <p align="center">
     <img src="images/2025_Challenge_Results.png" alt="Results" style="max-width:100%; height:auto; border:1px solid #ccc; padding:5px;">
 </p>
-
+-->
 </body></html>
