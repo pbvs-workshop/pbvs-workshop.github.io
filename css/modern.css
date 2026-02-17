@@ -1,0 +1,571 @@
+/* ==========================================================================
+   PBVS Workshop - Modern Theme Override
+   A clean, professional scientific theme appropriate for IEEE CVPR workshops.
+   This file overrides Bootstrap 3 defaults without changing content.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Custom Properties (Design Tokens)
+   -------------------------------------------------------------------------- */
+:root {
+    --color-primary: #4338ca;
+    --color-primary-dark: #3730a3;
+    --color-primary-light: #e0e7ff;
+    --color-primary-50: #eef2ff;
+    --color-accent: #6366f1;
+    --color-text: #1e293b;
+    --color-text-secondary: #475569;
+    --color-text-muted: #64748b;
+    --color-bg: #f8fafc;
+    --color-bg-card: #ffffff;
+    --color-border: #e2e8f0;
+    --color-border-light: #f1f5f9;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+    --radius: 10px;
+    --radius-lg: 14px;
+    --transition: 0.2s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Base / Global
+   -------------------------------------------------------------------------- */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif !important;
+    color: var(--color-text) !important;
+    background-color: var(--color-bg) !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    padding-top: 70px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif !important;
+    font-weight: 700 !important;
+    color: var(--color-text) !important;
+    line-height: 1.3 !important;
+}
+
+h2 {
+    font-size: 28px !important;
+    margin-top: 30px !important;
+}
+
+h5 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+h6 {
+    font-size: 13px !important;
+    color: var(--color-text-muted) !important;
+    font-weight: 500 !important;
+}
+
+p {
+    color: var(--color-text-secondary);
+    line-height: 1.75;
+}
+
+a {
+    color: var(--color-primary) !important;
+    transition: color var(--transition);
+}
+
+a:hover,
+a:focus {
+    color: var(--color-primary-dark) !important;
+    text-decoration: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   Navbar
+   -------------------------------------------------------------------------- */
+.navbar.navbar-default {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: none !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    box-shadow: var(--shadow-sm) !important;
+    min-height: 64px !important;
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar.navbar-default .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.02em !important;
+    color: var(--color-primary) !important;
+    padding: 20px 15px !important;
+    transition: opacity var(--transition);
+}
+
+.navbar-brand:hover {
+    opacity: 0.8;
+    color: var(--color-primary-dark) !important;
+}
+
+.navbar-nav > li > a {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    color: var(--color-text-secondary) !important;
+    padding: 22px 13px !important;
+    letter-spacing: 0.01em;
+    transition: color var(--transition) !important;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    color: var(--color-primary) !important;
+    background: transparent !important;
+}
+
+.navbar-nav > li.active > a,
+.navbar-nav > li.active > a:hover,
+.navbar-nav > li.active > a:focus {
+    color: var(--color-primary) !important;
+    background: transparent !important;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* Mobile toggle */
+.navbar-toggle {
+    border-color: var(--color-border) !important;
+    border-radius: 8px !important;
+    margin-top: 15px !important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: var(--color-text-secondary) !important;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: var(--color-primary-50) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Layout
+   -------------------------------------------------------------------------- */
+.section {
+    padding: 20px 0 !important;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+/* --------------------------------------------------------------------------
+   Panels → Modern Cards
+   -------------------------------------------------------------------------- */
+.panel {
+    background: var(--color-bg-card) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: var(--shadow-md) !important;
+    margin-bottom: 24px !important;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.panel:hover {
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.panel.panel-primary {
+    border-color: var(--color-border) !important;
+}
+
+.panel-heading {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent)) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 16px 24px !important;
+}
+
+.panel-title {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.02em;
+}
+
+.panel-body {
+    padding: 24px !important;
+}
+
+.panel-body p {
+    margin-bottom: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   Lists inside panels
+   -------------------------------------------------------------------------- */
+#content li,
+.panel-body li {
+    margin-bottom: 6px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.panel-body ul {
+    padding-left: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   Images
+   -------------------------------------------------------------------------- */
+.img-responsive {
+    border-radius: 8px;
+}
+
+.img-circle {
+    border: 3px solid var(--color-border) !important;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-circle:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-md);
+}
+
+/* Logo on index page */
+#pbvs_logo {
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+/* Sponsor logos */
+#trimble_logo,
+#plusai_logo,
+#thales_logo,
+#cvf_logo,
+#ieee_logo,
+#cvpr_logo,
+#hensoldt_logo,
+#uottawa_logo,
+#espol_logo,
+#cvc_logo,
+#afrl_logo,
+#amazon_logo,
+#inspirenhealth_logo {
+    border-radius: 8px;
+    padding: 8px;
+    transition: transform 0.2s ease;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+#trimble_logo:hover,
+#plusai_logo:hover,
+#thales_logo:hover,
+#cvf_logo:hover,
+#ieee_logo:hover,
+#cvpr_logo:hover {
+    transform: scale(1.05);
+}
+
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-bordered {
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius) !important;
+    overflow: hidden;
+}
+
+.table-bordered > tbody > tr > td,
+.table-bordered > thead > tr > th {
+    border-color: var(--color-border) !important;
+    padding: 12px 16px !important;
+}
+
+.table-bordered > tbody > tr:hover {
+    background-color: var(--color-primary-50) !important;
+}
+
+.table-bordered > tbody > tr > td a {
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Buttons & Links
+   -------------------------------------------------------------------------- */
+.btn-primary {
+    background: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    padding: 10px 24px !important;
+    transition: all var(--transition) !important;
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-dark) !important;
+    border-color: var(--color-primary-dark) !important;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Keynote Speaker Cards
+   -------------------------------------------------------------------------- */
+.section#keynotes .row {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.section#keynotes .row:last-child {
+    border-bottom: none;
+}
+
+.section#keynotes .col-md-4 {
+    text-align: center;
+}
+
+.section#keynotes .col-md-4 .img-circle {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin: 0 auto 12px auto;
+}
+
+.section#keynotes h5 {
+    color: var(--color-primary) !important;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   History Page - Speaker Grid
+   -------------------------------------------------------------------------- */
+.section#datasets .col-md-3 {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 12px;
+}
+
+.section#datasets .col-md-3 .img-circle {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto 8px auto;
+}
+
+.section#datasets .col-md-3 h5 {
+    color: var(--color-primary) !important;
+    margin-bottom: 2px;
+    font-size: 14px !important;
+}
+
+.section#datasets .col-md-3 h6 {
+    font-size: 12px !important;
+    margin-bottom: 4px;
+}
+
+.section#datasets .col-md-3 p.text-center {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   Organization Page
+   -------------------------------------------------------------------------- */
+.section#organization .panel-body .row {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.section#organization .panel-body .row:last-child {
+    border-bottom: none;
+}
+
+/* --------------------------------------------------------------------------
+   Sponsor Section Overrides (call_for_paper.html)
+   -------------------------------------------------------------------------- */
+.gold-sponsor-badge {
+    color: #b45309 !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.sponsor-card {
+    border: 2px solid #e5e7eb !important;
+    border-radius: var(--radius-lg) !important;
+    background: #ffffff !important;
+    box-shadow: var(--shadow-sm) !important;
+    transition: box-shadow 0.3s ease;
+}
+
+.sponsor-card:hover {
+    box-shadow: var(--shadow-md) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Challenge Page
+   -------------------------------------------------------------------------- */
+.section#announcement p {
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+.section[id^="challenge_"] .panel {
+    margin-bottom: 20px;
+}
+
+/* Postponed/cancelled challenge styling */
+.panel-body[style*="color: #b0b5ba"] {
+    opacity: 0.6;
+}
+
+/* --------------------------------------------------------------------------
+   Footer area spacing
+   -------------------------------------------------------------------------- */
+body > .section:last-child {
+    padding-bottom: 40px !important;
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar Panels (News, Important Dates, Sponsors, Links, Questions)
+   -------------------------------------------------------------------------- */
+.col-md-3 > .panel {
+    margin-bottom: 20px !important;
+}
+
+.col-md-3 > .panel .panel-body {
+    padding: 16px 20px !important;
+}
+
+.col-md-3 > .panel .panel-body a img {
+    margin-bottom: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   Selection & Focus States
+   -------------------------------------------------------------------------- */
+::selection {
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Print Styles
+   -------------------------------------------------------------------------- */
+@media print {
+    .navbar {
+        display: none !important;
+    }
+    body {
+        padding-top: 0 !important;
+    }
+    .panel {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Tweaks
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px !important;
+        padding-top: 64px !important;
+    }
+
+    .navbar-nav > li > a {
+        padding: 12px 15px !important;
+        border-bottom: none;
+    }
+
+    .navbar-nav > li.active > a {
+        border-bottom: none;
+        background-color: var(--color-primary-50) !important;
+        color: var(--color-primary) !important;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid var(--color-border) !important;
+        box-shadow: var(--shadow-md);
+        background: #fff;
+    }
+
+    .panel-body {
+        padding: 16px !important;
+    }
+
+    .panel-heading {
+        padding: 14px 16px !important;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav > li > a {
+        font-size: 12px !important;
+        padding: 22px 8px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Smooth Scrolling
+   -------------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------------------------------------------------
+   Scrollbar Styling (Webkit)
+   -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
